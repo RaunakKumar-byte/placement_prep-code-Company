@@ -1,0 +1,1 @@
+select first_name,last_name,Max(height) from patients;
