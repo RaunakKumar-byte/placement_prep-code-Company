@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+  <thead>
+    <tr><th>Item</th><th>Price</th><th>Qty</th><th>Subtotal</th></tr>
+  </thead>
+  <tbody id="cartBody">
+    <tr data-price="25">
+      <td>Wireless Mouse</td>
+      <td>$25</td>
+      <td>
+        <button class="btn" onclick="adjustQty(this, -1)">-</button>
+        <span class="qty">1</span>
+        <button class="btn" onclick="adjustQty(this, 1)">+</button>
+      </td>
+      <td class="subtotal">$25.00</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Total: $<span id="cartTotal">25.00</span> <span id="cartBadge" class="badge">10% Discount</span></h4>
+<script src="script.js"></script>
+</body>
+</html>

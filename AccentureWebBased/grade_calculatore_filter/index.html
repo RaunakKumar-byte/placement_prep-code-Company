@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Rating System</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <div class="form">
+  <input type="text" id="sName" placeholder="Student Name" />
+  <input type="number" id="sMarks" placeholder="Marks (0-100)" />
+  <button onclick="addStudent()">Add Student</button>
+</div>
+
+<select id="sFilter" onchange="filterStudents(this.value)">
+  <option value="all">All</option>
+  <option value="pass">Pass Only</option>
+  <option value="fail">Fail Only</option>
+</select>
+
+<table>
+  <thead><tr><th>Name</th><th>Marks</th><th>Status</th></tr></thead>
+  <tbody id="sBody"></tbody>
+</table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

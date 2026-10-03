@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.rating-stars {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.star {
+    color: gray;
+}
+
+.filled {
+    color: #ffd700;
+}
