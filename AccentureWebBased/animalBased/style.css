@@ -1,0 +1,14 @@
+.animal-image{
+    border-radius: 50%;
+    border:2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    height: 100px;
+    width: 100px;
+}
+
+
+.clicked{
+        border: 2px solid green;
+
+}

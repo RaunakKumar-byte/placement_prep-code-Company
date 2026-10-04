@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+#content{
+    border: 5px solid black;
+    margin:50px;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+
+    
+
+    text-align: center;
+}
+
+#color-box{
+    border: 3px solid black;
+    margin: 10px auto;
+    height: 100px;
+    width: 100px;
+}
+
