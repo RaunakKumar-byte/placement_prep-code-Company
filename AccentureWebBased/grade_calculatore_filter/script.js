@@ -16,7 +16,7 @@ function addStudent() {
   document.getElementById('sName').value = '';
   document.getElementById('sMarks').value = '';
 }
-
+  
 function filterStudents(val) {
   document.querySelectorAll('#sBody tr').forEach(r => {
     r.style.display = (val === 'all' || r.classList.contains(val)) ? '' : 'none';
