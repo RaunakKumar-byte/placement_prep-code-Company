@@ -1,0 +1,21 @@
+.css-triangle {
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 80px solid #A100FF;
+}
+
+.css-circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #A100FF;
+}
+
+.css-square {
+  width: 85px;
+  height: 85px;
+  border-radius: 8px;
+  background-color: #A100FF;
+}
