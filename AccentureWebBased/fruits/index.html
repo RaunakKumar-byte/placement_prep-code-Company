@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Example</title>
+
+    <!-- jQuery CDN (must not be removed) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="dropdown container">
+        <select id="fruitDropdown">
+            <option value="">Select a fruit</option>
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Mango">Mango</option>
+            <option value="Orange">Orange</option>
+        </select>
+
+        <button id="showBtn" type="button" onclick="ShowFruit()">Show Selected</button>
+
+        <!-- Required paragraph -->
+        <p id="selectedFruit"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
