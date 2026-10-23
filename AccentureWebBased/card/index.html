@@ -1,0 +1,61 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+
+    <style>
+        .card-name {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ledger-body">
+        <p class="intro">Directory entry.</p>
+
+        <div class="row">
+            <div class="field">
+                <label class="field-label" for="firstName">
+                    FIRST NAME
+                </label>
+                <input type="text" id="firstName">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="lastName">
+                    LAST NAME
+                </label>
+                <input type="text" id="lastName">
+            </div>
+        </div>
+
+        <div class="actions">
+            <button type="button" id="saveBtn">SAVE</button>
+        </div>
+
+        <div id="cardName" class="card-name"></div>
+    </div>
+
+    <script>
+        document.getElementById("saveBtn").addEventListener("click", function () {
+            let firstName = document.getElementById("firstName").value.trim();
+            let lastName = document.getElementById("lastName").value.trim();
+            let result = document.getElementById("cardName");
+
+            if (firstName === "" || lastName === "") {
+                result.innerText = "Both names are required.";
+            } else {
+                result.innerText = lastName + ", " + firstName;
+            }
+        });
+    </script>
+
+</body>
+</html>
